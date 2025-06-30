@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Analytics Dashboard</title>
+  <link rel="stylesheet" href="../css/style-ai.css"/>
+</head>
+<body>
+  <div class="container">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="logo">📘 KCM</div>
+      <nav>
+        <a href="#">Student Search</a>
+        <a class="active" href="#">Analytics</a>
+        <a href="#">Schedules</a>
+        <a href="#">Companies</a>
+        <a href="#">Notification</a>
+        <a href="#">Groups</a>
+        <a href="#">Setting</a>
+      </nav>
+      <div class="bottom-links">
+        <a href="#">Support</a>
+        <a href="#">Feedback</a>
+      </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <header class="topbar">
+        <h1>Analytics</h1>
+        <img src="https://via.placeholder.com/32" alt="Profile" class="profile-pic" />
+      </header>
+
+      <!-- Cards Section -->
+      <section class="cards">
+        <div class="card">
+          <p class="label">Placed Students</p>
+          <h2>74</h2>
+          <p class="change up">↑ 14.63% from last month</p>
+        </div>
+        <div class="card">
+          <p class="label">Total Company Visits</p>
+          <h2>70</h2>
+          <p class="change up">↑ 63.46% from last month</p>
+        </div>
+        <div class="card">
+          <p class="label">Applications per Company</p>
+          <h2>26</h2>
+          <p class="change down">↓ 23.92% from last month</p>
+        </div>
+        <div class="card pie">
+          <h3>326 Students</h3>
+          <p>Showing total students by department</p>
+          <ul class="legend">
+            <li><span class="dot red"></span> Engineers</li>
+            <li><span class="dot orange"></span> Marketing</li>
+            <li><span class="dot green"></span> Design</li>
+            <li><span class="dot yellow"></span> Finance</li>
+            <li><span class="dot black"></span> Science</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Department Analytics -->
+      <section class="filters">
+        <h2>Department Analytics</h2>
+        <select>
+          <option>Select Department</option>
+        </select>
+      </section>
+
+      <!-- Table Filters -->
+      <section class="table-filters">
+        <h2>API Analytics</h2>
+        <div class="filters-group">
+          <select><option>All Actions</option></select>
+          <select><option>Duration</option></select>
+          <select><option>Time</option></select>
+          <button class="download-btn">⬇️ Download Report</button>
+        </div>
+      </section>
+
+      <!-- Table -->
+      <table>
+        <thead>
+          <tr>
+            <th>User ID</th>
+            <th>User Email</th>
+            <th>Action</th>
+            <th>Duration (ms)</th>
+            <th>Date</th>
+            <th>Time</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>680a07d9887b43bec26b140c</td>
+            <td>ayaanrashid960@gmail.com</td>
+            <td>Create</td>
+            <td>80</td>
+            <td>07/11/2024</td>
+            <td>hh:mm:ss</td>
+          </tr>
+          <!-- Add more rows here -->
+        </tbody>
+      </table>
+    </main>
+  </div>
+</body>
+</html>

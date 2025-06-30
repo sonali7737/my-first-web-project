@@ -1,0 +1,157 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #f8f9fc;
+}
+
+.container {
+  display: flex;
+  min-height: 100vh;
+}
+
+.sidebar {
+  width: 220px;
+  background: #fff;
+  padding: 1rem;
+  border-right: 1px solid #ddd;
+}
+
+.sidebar .logo {
+  font-weight: bold;
+  font-size: 1.4rem;
+  margin-bottom: 2rem;
+}
+
+.sidebar nav a {
+  display: block;
+  padding: 0.5rem 0;
+  text-decoration: none;
+  color: #444;
+}
+
+.sidebar nav a.active {
+  background-color: #e0e7ff;
+  color: #3b82f6;
+  border-left: 4px solid #3b82f6;
+  padding-left: 0.75rem;
+}
+
+.sidebar .bottom-links {
+  margin-top: 2rem;
+  font-size: 0.9rem;
+}
+
+.main-content {
+  flex: 1;
+  padding: 1.5rem;
+}
+
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.profile-pic {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.card {
+  background: white;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.label {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.change {
+  font-size: 0.8rem;
+}
+
+.change.up {
+  color: green;
+}
+
+.change.down {
+  color: red;
+}
+
+.pie {
+  text-align: center;
+}
+
+.legend {
+  list-style: none;
+  padding: 0;
+  margin-top: 1rem;
+}
+
+.legend li {
+  margin: 0.2rem 0;
+  font-size: 0.85rem;
+}
+
+.dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-right: 0.5rem;
+}
+
+.red { background: #ef4444; }
+.orange { background: #f97316; }
+.green { background: #10b981; }
+.yellow { background: #facc15; }
+.black { background: #111827; }
+
+.filters {
+  margin-top: 2rem;
+}
+
+.table-filters {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.filters-group select, .download-btn {
+  margin-left: 0.5rem;
+  padding: 0.5rem;
+}
+
+.download-btn {
+  background: #3b82f6;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+table {
+  width: 100%;
+  margin-top: 1rem;
+  border-collapse: collapse;
+  background: white;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+th, td {
+  padding: 0.75rem;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+}

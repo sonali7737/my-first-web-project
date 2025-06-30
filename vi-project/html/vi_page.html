@@ -3,14 +3,76 @@
     <head>
         <title>myvi.in</title>
         <style>
+            *{
+                box-sizing: border-box;
+                margin:0;
+            }
+            .navbar {
+                display: flex;
+                flex-wrap: wrap;
+                padding: 0px 15px;
+                box-shadow:0 2px 4px 1px rgba(50,66,81,0.04);
+                
+            }
+            .menu1{
+                flex:73%;
+                font-family: "ViRegular", "Helvetica", "Arial", sans-serif;
+                font-size: 14px;
+                line-height: normal;
+                color:#2f3043;
+
+            }
+            .menu2{
+                flex:22%;
+                font-family: "ViRegular", "Helvetica", "Arial", sans-serif;
+                font-size: 14px;
+                line-height: normal;
+                color: #2f3043;;
+            }
+            .menu1 ul{
+                display:flex; 
+                list-style-type: none;
+                margin: 0px 0px;   
+                padding: 0px 100px;
+            }
+            .menu1 ul li:hover {
+                color: black;
+                border-bottom:3px solid;
+                border-color: red;
+                font-weight: bold;  
+                cursor: pointer; 
+            }
+            .menu2 ul{
+                display:flex;
+                list-style-type: none;
+                margin: 15px 0px;
+            }
+            .menu1 ul li {
+                margin: 0 10px;
+                padding:15px 0px;
+            }
+            .menu2 ul li {
+                margin: 0 10px;
+            }
+            .menu2 ul li.sign-in {
+                 color:red;
+            }
+            .menu2 ul li a {
+                color: inherit;
+                text-decoration: none; /* optional: removes underline */
+            }
+            .menu2 ul li a:hover {
+                text-decoration: underline; /* optional: removes underline */
+            }
+
         </style>
     </head>
     <body>
-        <navbar>
+        <navbar class="navbar">
             <div>
-                <img src="D:\vi-project\images\Vi-logo.svg" alt="logo">
+                <img src="..\images\Vi-logo.svg" alt="logo">
             </div>
-            <div>
+            <div class="menu1">
                 <ul>
                     <li>Prepaid</li>
                     <li>Postpaid</li>
@@ -20,13 +82,26 @@
                     <li>Explore</li>
                     <li>Help</li>
                     <li>DND</li>
-                
+                    <li><img src="https://www.myvi.in/content/dam/vodafoneideadigital/globalsearch/search.svg" alt="search" </li>
+                </ul>
+            </div>
+            <div class="menu2">
+                <ul>
+                    <li> 
+                        <a href="xyz">Business</a> 
+                    </li>
+                    <li>
+                        <a href="xyz">Investors</a>
+                    </li>
+                    <li class="sign-in">
+                        <a href="xyz">Sign In</a>
+                    </li>
                 </ul>
             </div>
 
         </navbar>
 
 
-
+ 
     </body>
     </html>
